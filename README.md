@@ -1,4 +1,26 @@
-# Cryptocurrencies
-
 ## Overview
-The following project provided a summary of cryptocurrencies being traded on the market for the Advisory Services Team at Accountability Accounting. The data was first cleaned and processed in order to suit machine learning models (unsupervised). The data was clustered using K-Means and reduced in dimensions using PCA. Lastly, it was then visualized in 2D and 3D.
+
+The goal of the Crypto Clustering project is to leverage unsupervised learning techniques, with a focus on K-means clustering, to predict whether cryptocurrencies are affected by price changes over either a 24-hour or 7-day timeframe. Additionally, the project explores the impact of dimensionality reduction achieved through Principal Component Analysis (PCA) on the results of clustering.
+
+## Process
+
+1. Begin by importing and preprocessing the dataset.
+2. Normalize the data using the StandardScaler method.
+3. Utilize the elbow method to identify the optimal value for 'k' (the number of clusters).
+4. Apply the K-means algorithm to cluster cryptocurrencies using the original scaled data.
+5. Implement Principal Component Analysis (PCA) to reduce the feature set to three principal components.
+6. Determine the best 'k' value for clustering using the PCA-transformed data.
+7. Proceed to cluster cryptocurrencies using K-means with the PCA-processed data.
+8. Visualize and compare the results using hvPlot.
+
+## Conclusion
+
+This project aims to investigate the impact of feature reduction on data clustering using the K-means algorithm. By analyzing and comparing the clustering results obtained from the original dataset and the dataset processed using Principal Component Analysis (PCA), we can gain valuable insights into how dimensionality reduction influences the clustering process.
+
+## Language and Libaries 
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- hvPlot
